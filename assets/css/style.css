@@ -19,6 +19,25 @@ h1, h2 {
     color: #184f63; /* Dark blue */
 }
 
+#portfolio .card-title {
+   color: #1f7798; /* Mid blue */
+   font-size: 1.2rem; 
+}
+
+#portfolio .btn-outline-secondary-hover {
+    background-color: #1f7798; /* Mid blue */
+}
+
+#portfolio .card-text {
+    min-height: 120px;
+}
+
+/* Contact section */
+
+#contact {
+    background-color: white;
+}
+
 #hero {
     background-image: url(../images/background.webp);
     background-size: cover;
@@ -26,4 +45,13 @@ h1, h2 {
     background-color: #dbdcde;
     min-height: 500px;
     padding: 5% 7%;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 1200px) {
+    /* Fixes portfolio cards being too tall on xl screens */
+    #portfolio .card-text {
+        min-height: auto;
+    }
 }
